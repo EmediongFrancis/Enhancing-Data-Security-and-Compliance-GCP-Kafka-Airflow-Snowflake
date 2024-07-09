@@ -8,7 +8,7 @@ The company has experienced several security incidents in the past, resulting in
 
 To address these challenges, `MadHatter Corp.` developed a solution focused on ensuring data security and compliance using AWS services. The architecture leverages AWS Identity and Access Management (IAM) for access control, AWS Key Management Service (KMS) for data encryption, Amazon Macie for sensitive data discovery and classification, and AWS CloudTrail for logging and auditing.
 
-By implementing this architecture, `MadHatter Corp.` has significantly enhanced its data security and compliance posture. The solution ensures that sensitive data is protected through robust access controls and encryption, and that all activities are logged and auditable. Continuous monitoring and automated discovery of sensitive information enable proactive management of data security risks. This comprehensive approach not only safeguards customer data but also ensures that `MadHatter Corp.` remains compliant with industry regulations, thereby avoiding penalties and maintaining customer trust.
+By implementing this architecture, `MadHatter Corp.` has significantly enhanced its data security and compliance posture. The solution ensures that sensitive data is protected through robust access controls and encryption; and that all activities are logged and auditable. Continuous monitoring and automated discovery of sensitive information enable proactive management of data security risks. This comprehensive approach not only safeguards customer data but also ensures that `MadHatter Corp.` remains compliant with industry regulations, thereby avoiding penalties and maintaining customer trust.
 
 ## AWS Tools Used - DeepDive
 ![Data S&C Architecture](assets/Pipeline-3.jpg)
