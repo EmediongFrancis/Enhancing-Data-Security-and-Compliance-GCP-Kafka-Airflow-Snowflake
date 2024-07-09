@@ -10,10 +10,6 @@ resource "aws_cloudtrail" "cloudtrail" {
 resource "aws_s3_bucket" "cloudtrail_bucket" {
   bucket = "madhattercorp-cloudtrail-logs"
 
-  versioning {
-    enabled = true
-  }
-
   server_side_encryption_configuration {
     rule {
       apply_server_side_encryption_by_default {
@@ -21,5 +17,14 @@ resource "aws_s3_bucket" "cloudtrail_bucket" {
         kms_master_key_id = aws_kms_key.data_encryption_key.id
       }
     }
+  }
+}
+
+
+resource "aws_s3_bucket_versioning" "cloudtrail_bucket" {
+  bucket = aws_s3_bucket.cloudtrail_bucket.id
+
+  versioning_configuration {
+    status = "Enabled"
   }
 }
